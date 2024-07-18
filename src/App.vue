@@ -14,18 +14,15 @@
 			<section id="about" ref="about">
 				<about2></about2>
 			</section>
-            <section id="socials" ref="socials">
+            <!-- <section id="socials" ref="socials">
                 <socials></socials>
-			</section>
-			<section id="tokenomics" ref="tokenomics">
-                <tokenomics2></tokenomics2>
-			</section>
+			</section> -->
             <section id="features" refs="features">
                 <features></features>
             </section>
-            <section id="how-to-buy" refs="how-to-buy">
-                <how-to-buy></how-to-buy>
-            </section>
+			<section id="tokenomics" ref="tokenomics">
+                <tokenomics2></tokenomics2>
+			</section>
 		</div>
 		<vue-footer></vue-footer>
 	</main>

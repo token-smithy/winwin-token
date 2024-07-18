@@ -1,7 +1,7 @@
 <template>
 	<div class="features-wrapper">
 		<div class="features-inner-wrapper">
-			<div><h1>FEATURES</h1></div>
+			<div><h2>KEY FEATURES</h2></div>
 			<div class="features-element">
 				<card class="" data-aos="fade-left"> liquidity management </card>
 			</div>

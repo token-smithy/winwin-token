@@ -1,4 +1,5 @@
 <template>
+    <h2>TOKENOMICS</h2>
 	<div class="tokenomics2-wrapper">
 		<div class="tokenomics2__left" data-aos="fade-right">
 			<div class="tokenomics-card">

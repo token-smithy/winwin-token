@@ -1,6 +1,6 @@
 <template>
 	<div class="about-wrapper">
-		<h2>about</h2>
+		<h2>ABOUT</h2>
 		<div class="about-inner">
 			<card class="about-left" data-aos="fade-left">
 				<img src="@/assets/img/wewin.png" alt="" />
