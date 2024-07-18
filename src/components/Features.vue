@@ -27,6 +27,9 @@
 .features-wrapper
     display: flex
     gap: 34px
+    flex-direction: column
+    @media (min-width: 768px)
+        flex-direction: row
     .features-left, .features-right
         flex: 1 1 auto
         border: 1px solid rgb(64, 190, 255)
@@ -38,6 +41,7 @@
         flex-direction: column
         align-items: center
         background-color: $secondary-color
+
         .features__title
             font-size: 32px
             text-align: center

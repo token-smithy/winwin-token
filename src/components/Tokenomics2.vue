@@ -73,6 +73,9 @@ const supply = import.meta.env.VITE_SUPPLY;
     .tokenomics2__center
         display: flex
         gap: 24px
+        flex-direction: column
+        @media (min-width: 768px)
+            flex-direction: row
         .tokenomics2__center__left, .tokenomics2__center__right, .tokenomics2__center__center
             flex: 1 1 auto
         .tokenomics2__center__center

@@ -9,7 +9,7 @@
 
 <style lang="sass">
 .token-footer
-    border-top: 2px solid black
+    border-top: 2px solid $tertiary-color
     background: $secondary-color
     flex-direction: column
     gap: 12px
