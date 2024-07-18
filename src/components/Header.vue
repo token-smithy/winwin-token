@@ -90,10 +90,14 @@ header
         color: white
         padding: 0 24px
         transition: 0.2s ease
+        border-bottom: 2px solid $tertiary-color
+        background-color: $secondary-color
+        @media (min-width: 768px)
+            background-color: transparent
+            border-bottom: none
         &.scrolled
             border-bottom: 2px solid $tertiary-color
             background-color: $secondary-color
-            color: black
         .navbar-left
             display: flex
             align-items: center
