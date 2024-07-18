@@ -1,32 +1,8 @@
-<script setup>
-import {ref, inject} from "vue"
-import BuyButton from "@/components/atomaric/BuyButton.vue"
-import IconHamburger from "./icons/IconHamburger.vue";
-import IconClose from "./icons/IconClose.vue";
-
-const menuOpen = inject('menuOpen')
-
-const links = [
-	{
-		title: "Home",
-		name: "home",
-	},
-	{
-		title: "About",
-		name: "about",
-	},
-	{
-		title: "Tokenomics",
-		name: "tokenomics",
-	},
-];
-</script>
-
 <template>
 	<div class="background"  @click="menuOpen =false" :class="{'menu-open': menuOpen}">
     </div>
         <header>
-		<div class="navbar">
+		<div class="navbar" :class="{scrolled: scrollPosition > 50}">
 			<div class="navbar-left">
 				<div class="navbar-icon">
 					<img alt="Logo Token" class="logo" src="@/assets/img/logo.png" />
@@ -70,17 +46,54 @@ const links = [
     </transition>
 </template>
 
+<script setup>
+import {ref, inject, onMounted } from "vue"
+import BuyButton from "@/components/atomaric/BuyButton.vue"
+import IconHamburger from "./icons/IconHamburger.vue";
+import IconClose from "./icons/IconClose.vue";
+
+const menuOpen = inject('menuOpen')
+const scrollPosition  = ref(0)
+const links = [
+	{
+		title: "Home",
+		name: "home",
+	},
+	{
+		title: "About",
+		name: "about",
+	},
+	{
+		title: "Tokenomics",
+		name: "tokenomics",
+	},
+];
+
+function updateScroll(){
+       scrollPosition.value = window.scrollY
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', updateScroll);  
+})
+</script>
+
 <style lang="sass" scoped>
 header
     .navbar
         position: fixed
         z-index: 3
         box-sizing: border-box
-        background-color: white
-        width: 100%
-        border-bottom: 2px solid black
+        width: 100vw
         display: flex
         justify-content: space-between
+        color: white
+        padding: 0 24px
+        transition: 0.2s ease
+        &.scrolled
+            border-bottom: 2px solid black
+            background-color: $secondary-color
+            color: black
         .navbar-left
             display: flex
             align-items: center
@@ -124,7 +137,7 @@ header
     top: 0
     right: 0
     padding: 15px 20px
-    background-color: white
+    background-color: $secondary-color
     width: 70%
     z-index: 100
     transform: translateX(0)

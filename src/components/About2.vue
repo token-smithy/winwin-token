@@ -8,8 +8,8 @@
 			<card class="about-right" data-aos="fade-right">
 				<h3>Concept</h3>
 				<p>
-					WIN-WIN is a token based on a healthy community, which strives to grow it and each member wealth.
-					WIN-WIN is guaranteed for all participants, who follow simple rule - do sell only in profit!
+					<b>WIN-WIN</b> is a token based on a healthy community, which strives to grow it and each member wealth.
+					<b>WIN-WIN</b> is guaranteed for all participants, who follow simple rule - <b>do sell only in profit!</b>
 				</p>
 				<h3>Why is it WIN-WIN?</h3>
 				<p>
@@ -17,10 +17,9 @@
 					this profit is used to buyback tokens. which makes holders be in guaranteed profit. So, sellers are
 					in profit and holders are in profit -> its WIN-WIN.
 				</p>
+				<h3>Be aware</h3>
 				<p>
-					Besides liquidity management with each sold token protocol earns 1% of it as a fee -> all these fees
-					are burning. All tokens, which are bought back are burning. Token starts with 21 mln total supply
-					and each seller makes it more and more rare.
+					Each seller makes the token more and more rare.
 				</p>
 			</card>
 		</div>
@@ -41,6 +40,7 @@ const supply = import.meta.env.VITE_SUPPLY;
         display: flex
         flex-direction: column
         gap: 20px
+        text-align: center
         @media (min-width: 768px)
             flex-direction: row-reverse
         .about-left

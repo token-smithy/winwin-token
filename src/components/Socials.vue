@@ -22,8 +22,8 @@ const descreener = import.meta.env.VITE_DESCREENER;
 </script>
 
 <style lang="sass">
-    .social-wrapper
-        display: flex
-        gap: 24px
-        justify-content: center
+.social-wrapper
+    display: flex
+    gap: 24px
+    justify-content: center
 </style>

@@ -1,84 +1,44 @@
 <template>
+    <h2>Features</h2>
 	<div class="features-wrapper">
-		<div class="features-inner-wrapper">
-			<div><h2>KEY FEATURES</h2></div>
-			<div class="features-element">
-				<card class="" data-aos="fade-left"> liquidity management </card>
+		<div class="features-left">
+			<h3 class="features__title">FREEZING (STAKING)</h3>
+			<div class="features__body">
+				<p>
+					Just as water turns into ice when it gets cold, $WATER tokens can be staked (iced) to earn rewards.
+					Stakers are rewarded with additional $WATER tokens over time, simulating the process of accumulating
+					ice
+				</p>
 			</div>
-            <div class="features-element">
-                <card  data-aos="fade-right"> protection holders against sellers </card>
-            </div>
-            <div class="features-element">
-                <card  data-aos="fade-left"> buybacks </card>
-            </div>
-            <div class="features-element">
-                <card  data-aos="fade-right"> token burning </card>
-            </div>
-            <div class="features-element">
-			<card  data-aos="fade-up"> token rarecity </card>
-
-            </div>
+		</div>
+		<div class="features-right">
+			<h3 class="features__title">Token burning - swap fees</h3>
+			<div class="features__body">
+				<p>
+					Each time 100 WIN-WIN tokens is sold into a pool, protocol earns 1 WIN-WIN token as a swap fee.
+					Protocol burns it, decreasing total supply.
+				</p>
+			</div>
 		</div>
 	</div>
 </template>
 
-<script setup lang="ts">
-import Card from "@/components/atomaric/Card.vue";
-</script>
 <style lang="sass">
 .features-wrapper
-    height: 400px
     display: flex
-    flex-direction: column
-    justify-content: center
-.features-inner-wrapper
-    position: relative
-    margin: 0px auto
-    position: relative
-    width: fit-content
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-
-    .features-element
-        transition: transform 0.3s ease
-        text-align: center
-        &:nth-child(2)
-            transform: rotate(13.161deg)
-            left: -300px
-            top: -100px
-            position: absolute
-            &:hover, &:active, &:focus
-                transform: scale(1.2) rotate(-13.161deg)
-        &:nth-child(3)
-            transform: rotate(-13.161deg)
-            right: -350px
-            top: -100px
-            position: absolute
-            &:hover, &:active, &:focus
-                transform: scale(1.2) rotate(13.161deg)
-        &:nth-child(4)
-            transform: rotate(-11.161deg)
-            left: -200px
-            top: 50px
-            position: absolute
-            &:hover, &:active, &:focus
-                transform: scale(1.2) rotate(11.161deg)
-        &:nth-child(5)
-            transform: rotate(11.161deg)
-            right: -200px
-            top: 50px
-            position: absolute
-            &:hover, &:active, &:focus
-                transform: scale(1.2) rotate(-11.161deg)
-        &:nth-child(6)
-            transform: rotate(1deg)
-            left: 50%
-            top: -150px
-            position: absolute
-            transform: translate(-50%, 0)
-            width: fit-content
-            &:hover, &:active, &:focus
-                transform: scale(1.2) translate(-50%, 0)
+    gap: 34px
+    .features-left, .features-right
+        flex: 1 1 auto
+        border: 1px solid rgb(64, 190, 255)
+        border-radius: 14px
+        max-width: 670px
+        width: 100%
+        padding: 76px 29px 28px
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: $secondary-color
+        .features__title
+            font-size: 32px
+            text-align: center
 </style>

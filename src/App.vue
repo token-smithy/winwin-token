@@ -1,6 +1,6 @@
 <template>
 	<div ref="home"></div>
-	<vue-header @link-clicked="menuItemClicked"></vue-header>
+	<vue-header  @link-clicked="menuItemClicked"></vue-header>
 	<main :class="{'menuOpen': menuOpen}" >
 		<section id="home">
 			<headline></headline>
@@ -9,6 +9,7 @@
 					{{ word }}
 				</span>
 			</Vue3Marquee>
+
 		</section>
 		<div class="container">
 			<section id="about" ref="about">
@@ -17,11 +18,17 @@
             <!-- <section id="socials" ref="socials">
                 <socials></socials>
 			</section> -->
-            <section id="features" refs="features">
-                <features></features>
+            <section id="key-features" refs="key-features">
+                <key-features></key-features>
             </section>
 			<section id="tokenomics" ref="tokenomics">
                 <tokenomics2></tokenomics2>
+			</section>
+			<section id="features" ref="features">
+                <features></features>
+			</section>
+			<section id="team" ref="team">
+                <team></team>
 			</section>
 		</div>
 		<vue-footer></vue-footer>
@@ -29,16 +36,18 @@
 </template>
 
 <script setup>
-import { ref, getCurrentInstance, provide } from "vue";
+import { ref, getCurrentInstance, provide, onMounted } from "vue";
 import VueHeader from "./components/Header.vue";
 import VueFooter from "./components/Footer.vue";
 import Tokenomics from "./components/Tokenomics.vue";
 import Tokenomics2 from "./components/Tokenomics2.vue";
+import KeyFeatures from "./components/KeyFeatures.vue";
 import Features from "./components/Features.vue";
 import Socials from "./components/Socials.vue";
 import HowToBuy from "./components/HowToBuy.vue";
 import Headline from "./components/Headline.vue";
 import About2 from "./components/About2.vue";
+import Team from "./components/Team.vue";
 import { Vue3Marquee } from "vue3-marquee";
 
 const home = ref();
@@ -49,19 +58,19 @@ const menuOpen = ref(false)
 provide('menuOpen', menuOpen)
 
 const words = [
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
-	"$WINWIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
+	"$WIN-WIN",
 ];
 
 function menuItemClicked(payLoad) {
@@ -74,7 +83,8 @@ function menuItemClicked(payLoad) {
 .token-headline
     height: auto 
     @media (min-width: 768px)
-        height: calc(100vh - 66px - 38.5px)
+        // height: calc(100vh - 66px - 38.5px)
+        height: calc(100vh - 38.5px)
 .vue3-marquee
     background-color: black
     color: #f7f9e3

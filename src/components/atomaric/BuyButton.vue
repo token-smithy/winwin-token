@@ -15,13 +15,13 @@ a
         transition: transform 0.3s ease
         button
             color: white
-            background-color: #f5bd03
+            background-color: $tertiary-color
             padding: 12px 24px
             border-radius: 8px
             border: 0
             transition: .3s
             &:hover, &:focus, &:active
-                background-color: lighten(#f5bd03, 20%)
+                // background-color: darken($tertiary-color, 10%)
                 cursor: pointer
                 transform: scale(1.2)
 

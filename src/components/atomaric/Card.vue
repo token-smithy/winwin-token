@@ -10,6 +10,6 @@
 .token-card
     padding: 22px
     border-radius: 8px
-    border: 3px solid #000
-    background: #ffffff
+    border: 3px solid $tertiary-color
+    background: $secondary-color
 </style>

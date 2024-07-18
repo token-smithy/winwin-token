@@ -37,17 +37,21 @@ const descreener = import.meta.env.VITE_DESCREENER;
     .social-box
         position: absolute
         bottom: 0
-        background: rgba(0,0,0,0.5)
-        height: 200px
-        width: 1000px
+        height: 100px
+        width: 100%
         left: 50%
         transform: translate(-50%, 0)
+        @media (min-width: 768px)
+            height: 200px
+            width: 1000px
         .social-wrapper
             display: flex
             gap: 24px
             justify-content: center
             align-items: center
             height: 100%
+            @media (min-width: 768px)
+                gap: 96px
     .token-headline_left, .token-headline_right
         flex: 1 1 auto
         display: flex
