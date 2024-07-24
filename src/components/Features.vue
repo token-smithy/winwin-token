@@ -1,12 +1,13 @@
 <template>
 	<h2>Features</h2>
 	<div class="features-wrapper">
-        <div class="features">
+		<div class="features">
 			<h3 class="features__title">TOKEN NAME ON A CHART</h3>
 			<div class="features__body">
 				<p>
-					How price chart looks is one of the crucial thing for any token on a market. WIN-WIN has a token
-					name drawn on a chart as a unique signature. Price is guaranteed to never drop below the drawing.
+					How the price chart looks like is one of the crucial things for any token on the market. WIN-WIN has
+					its token name drawn on its chart as a unique signature. Price is guaranteed to never drop below the
+					drawing.
 				</p>
 				<card class="features-mechanism">
 					<h4>MECHANISM</h4>
@@ -17,21 +18,23 @@
 				</card>
 			</div>
 		</div>
-        <div class="features">
+		<div class="features">
 			<h3 class="features__title">BUYBACKS</h3>
 			<div class="features__body">
 				<p>
-					When sellers neglected holders interest protocol recovery plan is taking place. Protocol recovers
-					holders interest by buying and burning WIN-WIN tokens.
+					When sellers neglect the holders interest, the protocol recovery plan starts. The protocol restores
+					the holders interest by buying and burning WIN-WIN tokens.
 				</p>
-				<p>Recovering the price and decreasing total supply work in a WIN-WIN holders interest.</p>
+				<p>This recovers the price and decreases the total supply, thus working in the holders interest.</p>
 				<card class="features-mechanism">
 					<h4>MECHANISM</h4>
 					<ul>
-						<li>Profit generated from Liquidity management is used to buy tokens from a pool.</li>
-						<li>Purchased WIN-WIN tokens are burned by a protocol.</li>
-						<li>Assess the Damage. Understanding the full impact helps in liquidity management</li>
-						<li>configuration.</li>
+						<li>Profit generated from Liquidity management is used to buy tokens from the pool.</li>
+						<li>Purchased WIN-WIN tokens are burned by the protocol.</li>
+						<li>
+							Assess the Damage. Understanding the full impact helps in liquidity management
+							configuration.
+						</li>
 					</ul>
 				</card>
 			</div>
@@ -40,17 +43,17 @@
 			<h3 class="features__title">TOKEN BURNING - Swap Fees</h3>
 			<div class="features__body">
 				<p>
-					WIN-WIN scenario is challenging to achieve. Generally, the departure of participants makes win-win
-					scenarios less common. Similarly, WIN-WIN total supply is decreasing.
+					WIN-WIN scenario is challenging to achieve. Generally, the departure of participants makes win-win scenarios less common. Thus, the WIN-WIN total supply is decreasing.
 				</p>
-				<p><b>Each time 100 WIN-WIN tokens are sold - total supply is decreased by 1 WIN-WIN.</b></p>
+				<p><b>Each time a 100 WIN-WIN tokens are sold - the total supply is decreased by 1 WIN-WIN.
+</b></p>
 				<card class="features-mechanism">
 					<h4>MECHANISM</h4>
 					<ul>
-						<li>Protocol is earning swap fees as a liquidity provider.</li>
-						<li>Sellers generate WIN-WIN earnings for a protocol.</li>
-						<li>Protocol collects swap fees.</li>
-						<li>All collected WIN-WIN tokens are burned by a protocol.</li>
+						<li>The protocol is earning swap fees as a liquidity provider.</li>
+						<li>Sellers generate WIN-WIN earnings for the protocol.</li>
+						<li>The protocol collects swap fees.</li>
+						<li>All collected WIN-WIN tokens are burned by the protocol.</li>
 					</ul>
 				</card>
 			</div>
@@ -74,12 +77,14 @@
 							Significant sell pressure (dump) does feel an effect - generating a profit for a protocol.
 						</li>
 						<li>Generated profit at certain checkpoints is used to make buybacks.</li>
-						<li>Assess the Damage. Understanding the full impact helps in liquidity management configuration.</li>
+						<li>
+							Assess the Damage. Understanding the full impact helps in liquidity management
+							configuration.
+						</li>
 					</ul>
 				</card>
 			</div>
 		</div>
-		
 	</div>
 </template>
 
