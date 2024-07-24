@@ -6,7 +6,7 @@
 				<card class="" data-aos="fade-left"> liquidity management </card>
 			</div>
             <div class="key-features-element">
-                <card  data-aos="fade-right"> protection holders against sellers </card>
+                <card  data-aos="fade-right"> protecting holders against sellers </card>
             </div>
             <div class="key-features-element">
                 <card  data-aos="fade-left"> buybacks </card>

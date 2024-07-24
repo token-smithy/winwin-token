@@ -7,8 +7,8 @@
 			signature made by a team and price will never drop below it! The most important question, what will be drawn
 			after it? The answer will be given only by our community, chart shows the best how healthy community is. We
 			as a team put our efforts to create the best environment for a token to succeed, now its your turn! Remember
-			the only thing you have to do is to sell only in profit! Share with buyers only from healthy communities to
-			make our community grow!
+			the only things you have to do are hold or sell only in profit! Share with buyers only from healthy
+			communities to make our community grow!
 		</p>
 	</div>
 </template>

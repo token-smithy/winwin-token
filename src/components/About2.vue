@@ -8,19 +8,18 @@
 			<card class="about-right" data-aos="fade-right">
 				<h3>Concept</h3>
 				<p>
-					<b>WIN-WIN</b> is a token based on a healthy community, which strives to grow it and each member wealth.
-					<b>WIN-WIN</b> is guaranteed for all participants, who follow simple rule - <b>do sell only in profit!</b>
+					<b>WIN-WIN</b> is a token striving to grow a healthy community and grow the wealth of each member.
+					<b>WIN-WIN</b> is guaranteed for all participants who follow a simple rule -
+					<b>sell only in profit!</b>
 				</p>
 				<h3>Why is it WIN-WIN?</h3>
 				<p>
-					Protocol manages liquidity in a way that sellers are leaving a little part of profit for holders,
-					this profit is used to buyback tokens. which makes holders be in guaranteed profit. So, sellers are
-					in profit and holders are in profit -> its WIN-WIN.
+					The protocol manages its liquidity in a way, such that sellers are leaving a little bit of their
+					profit for the holders - this is done via buyback and burn. This way the holders are guaranteed to
+					profit, the sellers profit -> it's a WIN-WIN.
 				</p>
-				<h3>Be aware</h3>
-				<p>
-					Each seller makes the token more and more rare.
-				</p>
+				<h3>Beware</h3>
+				<p>Each seller makes the token more rare.</p>
 			</card>
 		</div>
 	</div>

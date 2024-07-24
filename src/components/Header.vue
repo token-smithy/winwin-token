@@ -5,7 +5,7 @@
 		<div class="navbar" :class="{scrolled: scrollPosition > 50}">
 			<div class="navbar-left">
 				<div class="navbar-icon">
-					<img alt="Logo Token" class="logo" src="@/assets/img/logo.png" />
+					<img alt="Logo Token" class="logo" @click="logoClicked" src="@/assets/img/logo.png" />
 				</div>
 				<div class="navbar-title">WIN-WIN</div>
 			</div>
@@ -51,6 +51,7 @@ import {ref, inject, onMounted } from "vue"
 import BuyButton from "@/components/atomaric/BuyButton.vue"
 import IconHamburger from "./icons/IconHamburger.vue";
 import IconClose from "./icons/IconClose.vue";
+import duckSound from "@/assets/audio/duck.mp3"
 
 const menuOpen = inject('menuOpen')
 const scrollPosition  = ref(0)
@@ -67,12 +68,25 @@ const links = [
 		title: "Tokenomics",
 		name: "tokenomics",
 	},
+	{
+		title: "Features",
+		name: "features",
+	},
+	{
+		title: "Team",
+		name: "team",
+	},
 ];
 
 function updateScroll(){
        scrollPosition.value = window.scrollY
 }
 
+function logoClicked(){
+const audio = new Audio(duckSound);
+
+audio.play();
+}
 onMounted(() => {
     window.addEventListener('scroll', updateScroll);  
 })

@@ -22,7 +22,7 @@
                 <key-features></key-features>
             </section>
 			<section id="tokenomics" ref="tokenomics">
-                <tokenomics2></tokenomics2>
+                <tokenomics3></tokenomics3>
 			</section>
 			<section id="features" ref="features">
                 <features></features>
@@ -40,7 +40,7 @@ import { ref, getCurrentInstance, provide, onMounted } from "vue";
 import VueHeader from "./components/Header.vue";
 import VueFooter from "./components/Footer.vue";
 import Tokenomics from "./components/Tokenomics.vue";
-import Tokenomics2 from "./components/Tokenomics2.vue";
+import Tokenomics3 from "./components/Tokenomics3.vue";
 import KeyFeatures from "./components/KeyFeatures.vue";
 import Features from "./components/Features.vue";
 import Socials from "./components/Socials.vue";
