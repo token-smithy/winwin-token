@@ -18,7 +18,7 @@
 			<div class="tokenomics2__column">
 				<div class="tokenomics-card">
 					<!-- <div class="tokenomics-card__title">CHARITY FIRST</div> -->
-					<div>0%</div>
+					<div>3%</div>
 					<!-- <p>
 					Global charity and research initiatives that will drive attention of millions of people. $WATER aims
 					to have a net-positive impact on real world with the help of charity.
@@ -29,9 +29,9 @@
 			<div class="tokenomics2__column">
 				<div class="tokenomics-card">
 					<!-- <div class="tokenomics-card__title">TOTAL BURNED</div> -->
-					<div>3%</div>
+					<div>0%</div>
 				</div>
-				<div class="tokenomics-text">are vesting for "partners</div>
+				<div class="tokenomics-text">are vesting for "partners"</div>
 			</div>
 		</div>
 		<div class="tokenomics2__footer">
