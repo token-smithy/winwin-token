@@ -43,10 +43,10 @@
 			<h3 class="features__title">TOKEN BURNING - Swap Fees</h3>
 			<div class="features__body">
 				<p>
-					WIN-WIN scenario is challenging to achieve. Generally, the departure of participants makes win-win scenarios less common. Thus, the WIN-WIN total supply is decreasing.
+					WIN-WIN scenario is challenging to achieve. Generally, the departure of participants makes win-win
+					scenarios less common. Thus, the WIN-WIN total supply is decreasing.
 				</p>
-				<p><b>Each time a 100 WIN-WIN tokens are sold - the total supply is decreased by 1 WIN-WIN.
-</b></p>
+				<p><b>Each time a 100 WIN-WIN tokens are sold - the total supply is decreased by 1 WIN-WIN. </b></p>
 				<card class="features-mechanism">
 					<h4>MECHANISM</h4>
 					<ul>
@@ -62,25 +62,28 @@
 			<h3 class="features__title">LIQUIDITY MANAGEMENT</h3>
 			<div class="features__body">
 				<p>
-					Balancing interests is essential for sustainability of WIN-WIN scenarios, because it ensures all
+					Balancing the interests is essential for sustainability of WIN-WIN scenarios, because it ensures all
 					parties benefit, fostering satisfaction, trust, collaboration, and long-term success.
 				</p>
-				<p>WIN-WIN uses liquidity management to balance holders and sellers interests.</p>
+				<p>WIN-WIN uses liquidity management to balance the holders and the sellers interests.</p>
 				<card class="features-mechanism">
 					<h4>MECHANISM</h4>
 					<ul>
-						<li>Protocol at certain checkpoints is rebalancing a concentration of liquidity.</li>
-						<li>Lower price ranges become more concentrated and higher price ranges less concentrated.</li>
-						<li>Rebalancing concerns a minor part of the whole liquidity.</li>
-						<li>Normal trading activity doesn't feel an effect of a rebalancing.</li>
+						<li>The protocol at certain checkpoints is rebalancing the concentration of liquidity.</li>
+						<li>
+							The lower price ranges become more concentrated and the higher price ranges less
+							concentrated.
+						</li>
+						<li>The rebalancing affects a minor part of the whole liquidity.</li>
+						<li>Normal trading activity doesn't feel the effect of the rebalancing.</li>
 						<li>
 							Significant sell pressure (dump) does feel an effect - generating a profit for a protocol.
 						</li>
-						<li>Generated profit at certain checkpoints is used to make buybacks.</li>
-						<li>
+						<li>The generated profit at certain checkpoints is used to make buybacks.</li>
+						<!-- <li>
 							Assess the Damage. Understanding the full impact helps in liquidity management
 							configuration.
-						</li>
+						</li> -->
 					</ul>
 				</card>
 			</div>
