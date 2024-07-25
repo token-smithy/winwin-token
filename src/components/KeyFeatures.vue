@@ -27,10 +27,12 @@ import Card from "@/components/atomaric/Card.vue";
 </script>
 <style lang="sass">
 .key-features-wrapper
-    height: 400px
+
     display: flex
     flex-direction: column
     justify-content: center
+    @media (min-width: 768px)
+        height: 400px
 .key-features-inner-wrapper
     position: relative
     margin: 0px auto

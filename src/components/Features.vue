@@ -98,7 +98,9 @@ import Card from "./atomaric/Card.vue";
 <style lang="sass">
 .features-wrapper
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr
+    @media (min-width: 768px)
+        grid-template-columns: 1fr 1fr
     gap: 34px
     .features
         flex: 1 1 auto

@@ -82,6 +82,7 @@ $card-size: 300px
         display: flex
         gap: 24px
         justify-content: center
+        align-items: center
         flex-direction: column
         @media (min-width: 768px)
             flex-direction: row
