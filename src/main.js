@@ -1,7 +1,14 @@
+import { QueryClient, VueQueryPlugin } from "@tanstack/vue-query";
+import { WagmiPlugin } from "@wagmi/vue";
+import { createApp } from "vue";
+import App from "./App.vue";
+import AOS from "aos";
+import { config } from "./wagmi";
+import router from "./router";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 AOS.init();
-createApp(App).mount('#app')
+
+const queryClient = new QueryClient();
+
+createApp(App).use(WagmiPlugin, { config }).use(router).use(VueQueryPlugin, { queryClient }).mount("#app");

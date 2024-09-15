@@ -7,7 +7,7 @@
 				<div class="navbar-icon">
 					<img alt="Logo Token" class="logo" @click="logoClicked" src="@/assets/img/logo.png" />
 				</div>
-				<div class="navbar-title">WIN-WIN</div>
+				<div class="navbar-title" @click="router.push('/')">WIN-WIN</div>
 			</div>
 			<div class="navbar-inner">
 				<div class="main-menu-links">
@@ -19,6 +19,7 @@
 					>
 						{{ link.title }}
 					</div>
+                    <token-button @click="router.push('/presale')">Presale</token-button>
                     <buy-button class="main-menu-link"></buy-button>
                     <icon-hamburger class="hamburger-button" @click="menuOpen = true"></icon-hamburger>
 				</div>
@@ -52,7 +53,11 @@ import BuyButton from "@/components/atomaric/BuyButton.vue"
 import IconHamburger from "./icons/IconHamburger.vue";
 import IconClose from "./icons/IconClose.vue";
 import duckSound from "@/assets/audio/duck.mp3"
+import TokenButton from "@/components/atomaric/TokenButton.vue"
 
+import {useRouter} from "vue-router"
+
+const router = useRouter();
 const menuOpen = inject('menuOpen')
 const scrollPosition  = ref(0)
 const links = [
@@ -90,6 +95,7 @@ audio.play();
 onMounted(() => {
     window.addEventListener('scroll', updateScroll);  
 })
+
 </script>
 
 <style lang="sass" scoped>

@@ -12,10 +12,14 @@
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
+        "@tanstack/vue-query": "^5.54.2",
+        "@wagmi/vue": "^0.0.40",
         "aos": "^2.3.4",
         "gh-pages": "^6.1.1",
         "sass": "^1.77.4",
+        "viem": "^2.21.2",
         "vue": "^3.4.21",
+        "vue-router": "^4.4.5",
         "vue3-marquee": "^4.2.0"
     },
     "devDependencies": {
