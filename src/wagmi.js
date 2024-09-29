@@ -1,6 +1,6 @@
 import { http, createConfig } from '@wagmi/vue'
 import { base } from '@wagmi/vue/chains'
-import { injected, metaMask, safe, walletConnect } from '@wagmi/vue/connectors'
+import { injected, safe, walletConnect } from '@wagmi/vue/connectors'
 
 export const config = createConfig({
   chains: [base],
@@ -8,6 +8,5 @@ export const config = createConfig({
     [base.id]: http(),
   },
   connectors: [
-    metaMask(),
   ]
 })

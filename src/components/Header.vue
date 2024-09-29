@@ -19,7 +19,7 @@
 					>
 						{{ link.title }}
 					</div>
-                    <token-button @click="router.push('/presale')">Presale</token-button>
+                    <token-button class="main-menu-link" @click="router.push('/presale')">Presale</token-button>
                     <buy-button class="main-menu-link"></buy-button>
                     <icon-hamburger class="hamburger-button" @click="menuOpen = true"></icon-hamburger>
 				</div>
@@ -41,7 +41,13 @@
 					</div>
                     
                 </div>
-                <buy-button></buy-button>
+                <div class="mobile-menu-buttons">
+                    <div>
+                    <token-button  @click="router.push('/presale');menuOpen = false">Presale</token-button>
+
+                    </div>
+                    <buy-button></buy-button>
+                </div>
             </div>
         </div>
     </transition>
@@ -183,6 +189,10 @@ header
                 align-self: center
                 &:hover, &:focus, &:active
                     background-color: darken(white, 10%)
+        .mobile-menu-buttons
+            div
+                display: flex
+                justify-content: center
         .token-button--buy
             margin-top: 15px
             text-align: center

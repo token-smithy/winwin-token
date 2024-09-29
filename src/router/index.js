@@ -23,6 +23,8 @@ const router = createRouter({
           behavior: 'smooth',
           top: 100
         }
+      } else{
+        return { top: 0 };
       }
   },
 })
