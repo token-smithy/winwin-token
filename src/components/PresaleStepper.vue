@@ -41,7 +41,7 @@ const modelValue = computed({
 })
 
 const props = defineProps({
-	modelValue: String,
+    modelValue: String,
     steps: Array
 });
 

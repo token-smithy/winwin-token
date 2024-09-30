@@ -3,7 +3,7 @@
 		<!-- <token-button @click="openLoginModal">Login to join presale</token-button> -->
 		<div>
 			<template v-if="!isConnected">
-				<div class="login-text">Connect to your wallet to claim fair token share</div>
+				<div class="login-text">{{ props.text }}</div>
 				<div class="login-methods">
 					<token-button v-for="connector in connectors" @click="connect({ connector, chainId })">
 						{{ connector.name }}
@@ -23,6 +23,10 @@ import Card from "@/components/atomaric/Card.vue";
 import TokenButton from "@/components/atomaric/TokenButton.vue";
 
 import { useConnect, useChainId, useAccount } from "@wagmi/vue";
+
+const props = defineProps({
+    text: String,
+});
 
 const inputEth = ref();
 const chainId = useChainId();

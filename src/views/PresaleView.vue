@@ -61,7 +61,7 @@
 				<card class="presale-live">
 					<button @click="progress++">add</button>
 					<progress-bar :max="max" v-model="progress"> </progress-bar>
-					<login>
+					<login text="Connect to your wallet to join the presale">
 						<template #connected>
 							<div class="wallet-connected">
 								<div class="disconnect">
@@ -86,7 +86,7 @@
 			</template>
 			<template v-if="activeState.id === 3">
 				<card class="presale-completed">
-					<login>
+					<login text="Connect to your wallet to claim fair token share">
 						<template #connected>
 							<div class="wallet-connected ">
 								<div class="disconnect">
