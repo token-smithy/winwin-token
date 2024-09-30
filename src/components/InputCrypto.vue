@@ -3,7 +3,7 @@
         <div class="currency">
            $ETH
         </div>
-		<input id="input" type="number" placeholder="0.001" v-model="value"/>
+		<input id="input" type="number" placeholder="0.001" v-model="value" step="0.001" lang="en-US"/>
 	</div>
 </template>
 <script setup lang="ts">

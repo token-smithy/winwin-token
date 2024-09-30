@@ -3,7 +3,7 @@
 		<!-- <token-button @click="openLoginModal">Login to join presale</token-button> -->
 		<div>
 			<template v-if="!isConnected">
-				<div class="login-text">Connect to your wallet to join the presale</div>
+				<div class="login-text">Connect to your wallet to claim fair token share</div>
 				<div class="login-methods">
 					<token-button v-for="connector in connectors" @click="connect({ connector, chainId })">
 						{{ connector.name }}

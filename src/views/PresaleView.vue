@@ -6,8 +6,11 @@
 		</div>
 	</div>
 	<div class="container">
+        <card>
+            <presale-stepper v-model="activeState" :steps="steps"></presale-stepper>
+        </card>
 		<section id="presale" ref="presale">
-			<block1 title="Presale">
+			<block1 >
 				<template #left>
 					<h3>What is WIN-WIN Public Presale?</h3>
 					<p>
@@ -50,7 +53,7 @@
 					<div><button @click="resetCountdown">setTime</button></div>
 					<p>
 						Presale contract address will be announced on telegram and discord.<br />
-						Don't send ETH to any other contract. Stay SAFE!
+						Don't send ETH to any other contract. Stay SAFU!
 					</p>
 				</card>
 			</template>
@@ -80,7 +83,6 @@
 					<contract-button></contract-button>
 				</card>
 
-				<div>contract-address in the middle</div>
 			</template>
 			<template v-if="activeState.id === 3">
 				<card class="presale-completed">
@@ -113,6 +115,7 @@ import InputCrypto from "@/components/InputCrypto.vue";
 import TokenButton from "@/components/atomaric/TokenButton.vue";
 import {useDisconnect} from "@wagmi/vue"
 import ProgressBar from "@/components/ProgressBar.vue";
+import PresaleStepper from "@/components/PresaleStepper.vue";
 const { disconnect } = useDisconnect();
 const endDt = ref();
 endDt.value = new Date(1745224400000);
@@ -121,13 +124,20 @@ const max = ref(10);
 const progress = ref(4.42);
 const seconds = ref(0);
 const countdownExpired = ref(1);
+
+const steps = [
+{ id: 1, name: "Presale upcoming", text: "Scroll down to get all informations" },
+{ id: 2, name: "Presale IS LIVE", text: "Scroll down to join the presale" },
+{ id: 3, name: "Presale completed", text: "Scroll down to claim" },
+]
+
 const activeState = computed(() => {
 	if (seconds.value > 0) {
-		return { id: 1, name: "Presale upcoming", text: "Scroll down to get all informations" };
+		return steps[0]
 	} else if (progress.value >= max.value) {
-		return { id: 3, name: "Presale completed", text: "Scroll down to claim" };
+		return steps[2]
 	} else {
-		return { id: 2, name: "Presale IS LIVE", text: "Scroll down to join the presale" };
+		return steps[1]
 	}
 });
 

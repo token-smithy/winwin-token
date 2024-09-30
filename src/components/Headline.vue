@@ -34,6 +34,7 @@ const descreener = import.meta.env.VITE_DESCREENER;
         flex-direction: row
     img
         width: 100%
+        object-fit: cover
     .social-box
         position: absolute
         bottom: 0
